@@ -1,0 +1,30 @@
+//adding vars and mixins
+@import './variables';
+
+// common styles
+
+a { 
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+html { 
+  box-sizing: border-box; 
+}
+
+*, 
+*::before, 
+*::after { 
+  box-sizing: inherit; 
+}
+
+img { 
+  max-width: 100%; 
+}
