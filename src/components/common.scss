@@ -1,5 +1,5 @@
 //adding vars and mixins
-@import './variables';
+@import "./variables";
 
 // common styles
 
@@ -28,3 +28,7 @@ html {
 img { 
   max-width: 100%; 
 }
+
+// adding components 
+
+@import "./room-search-form/room-search-form";
