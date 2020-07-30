@@ -1,0 +1,32 @@
+<header class="header">
+  <nav class="header__nav container">
+    <a href="#" class="header__logo">
+      <img src="./static/images/logo.svg" alt="logo">
+    </a>
+    <ul class="header__nav-links">
+      <li>
+        <a href="#" class="header__nav-link header__nav-link--current">О нас</a>
+      </li>
+      <li>
+        <a href="#" class="header__nav-link">Услуги</a>
+      </li>
+      <li>
+        <a href="#" class="header__nav-link">Вакансии</a>
+      </li>
+      <li>
+        <a href="#" class="header__nav-link">Новости</a>
+      </li>
+      <li>
+        <a href="#" class="header__nav-link">Соглашения</a>
+      </li>
+    </ul>
+    @@include('button/index.html', {
+      'class': 'nav-button button--white',
+      'text': 'войти'
+    })
+    @@include('button/index.html', {
+      'class': 'nav-button button--purple',
+      'text': 'зарегистрироваться'
+    })
+  </nav>
+</header>

@@ -1,0 +1,26 @@
+.button {
+  border: none;
+  border-radius: 22px;
+  padding-top: 10px;
+  padding-bottom: 9px;
+
+  @include typography ($h3...);
+
+  &--white {
+    background-color: transparent;
+    border: 1px solid $purple;
+
+    color: $purple;
+  }
+
+  &--purple {
+    background-image: $purple-bgc;
+    color: $white;
+  }
+}
+
+.nav-button {
+  padding-left: 19px;
+  padding-right: 19px;
+}
+

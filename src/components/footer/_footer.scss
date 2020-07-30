@@ -31,7 +31,6 @@
   }
   
   &__text {
-    @include typography($body...);
     margin-top: 0;
   }
 
@@ -48,8 +47,7 @@
 
 .copyright-bar {
   width: 100%;
-
-  box-shadow: 0px 10px 20px $dark-shade50;
+  box-shadow: 0 -1px 0 $dark-shade50;
 
   &__wrapper {
     display: flex;

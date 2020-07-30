@@ -1,0 +1,47 @@
+.toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  
+  &__input {
+    appearance: none;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: 4px;
+      width: 12px;
+      height: 12px;
+      background-color: $dark-shade25;
+      border-radius: 50%;
+      transition: all .5s ease-in-out;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 40px;
+      height: 20px;
+      border-radius: 10px;
+      border: 1px solid $dark-shade25;
+      transition: all .5s ease-in-out;
+    }
+    
+    &:checked::before {
+      left: 24px;
+      background-color: $purple;
+    }
+
+    &:checked::after {
+      border-color: $purple;
+    }
+  }
+
+  &__text {
+    margin-left: 50px;
+    color: $dark-shade25;
+  }
+}

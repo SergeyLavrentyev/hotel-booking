@@ -3,8 +3,13 @@
 
 // common styles
 
+body {
+  @include typography ($body...);
+}
+
 a { 
   text-decoration: none;
+  @include typography ($body...);
 }
 
 ul {
@@ -42,6 +47,9 @@ img {
 @import "./radio/radio";
 @import "./rating/rating";
 @import "./room-search-form/room-search-form";
+@import "./button/button";
+@import "./toggle/toggle";
 
 
 @import "./footer/footer";
+@import "./header/header";
