@@ -1,10 +1,6 @@
 .button {
-  border: none;
-  border-radius: 22px;
   padding-top: 10px;
   padding-bottom: 9px;
-
-  @include typography ($h3...);
 
   &--white {
     background-color: transparent;
@@ -22,5 +18,29 @@
 .nav-button {
   padding-left: 19px;
   padding-right: 19px;
+}
+
+.form-button {
+  background-image: $purple-bgc;
+  color: $white;
+  
+  width: 100%;
+  margin-bottom: 30px;
+
+  position: relative;
+
+  &::after {
+    content: url("./static/images/arrow_forward(white).svg");
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
 }
 

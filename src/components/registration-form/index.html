@@ -1,0 +1,47 @@
+<form action="#" class="registration-form">
+  <span class="registration-form__title">Регистрация аккаунта</span>
+  <label class="registration-form__label">
+    <input type="text" class="registration-form__input" placeholder="Имя">
+  </label>
+  <label class="registration-form__label">
+    <input type="text" class="registration-form__input" placeholder="Фамилия">
+  </label>
+  <div class="registration-form__group">
+    @@include('radio/index.html', {
+      "class": "registration-form__radio",
+      "name": "gender",
+      "value": "male",
+      "text": "мужчина" 
+    })
+    @@include('radio/index.html', {
+      "class": "registration-form__radio",
+      "name": "gender",
+      "value": "female",
+      "text": "женщина" 
+    })
+  </div>
+  <label class="registration-form__label">
+    <span class="registration-form__label-text">дата рождения</span>
+    <input type="text" class="registration-form__input" placeholder="ДД.ММ.ГГГГ">
+  </label>
+  <span class="registration-form__label-text">данные для входа в сервис</span>
+  <label class="registration-form__label">
+    <input type="text" class="registration-form__input" placeholder="Email">
+  </label>
+  <label class="registration-form__label">
+    <input type="text" class="registration-form__input" placeholder="Пароль">
+  </label>
+  @@include('toggle/index.html', {
+    "class": "registration-form__toggle"
+  })
+
+  @@include('button/index.html', {
+    "class": "registration-form__button form-button",
+    "text": "перейти к оплате"
+  })
+  <span class="registration-form__text">Уже есть аккаунт на Toxin</span>
+  @@include('button/index.html', {
+    "class": "registration-form__button registration-form__enter-button button--white",
+    "text": "войти"
+  })
+</form>

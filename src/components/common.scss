@@ -42,6 +42,37 @@ img {
   padding-right: 20px;
 }
 
+form {
+  width: 100%;
+  max-width: 380px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input[type=text]{
+  width: 100%;
+  background-color: $white;
+  padding: 13px 15px;
+  border: transparent;
+  border-radius: 4px;
+  border: 1px solid $dark-shade25;
+
+}
+
+::placeholder {
+  color: $dark-shade25;
+}
+
+button {
+  @include typography ($h3...);
+
+  border: none;
+  border-radius: 22px;
+}
+
 // adding components 
 
 @import "./radio/radio";
@@ -49,6 +80,7 @@ img {
 @import "./room-search-form/room-search-form";
 @import "./button/button";
 @import "./toggle/toggle";
+@import "./registration-form/registration-form";
 
 
 @import "./footer/footer";
